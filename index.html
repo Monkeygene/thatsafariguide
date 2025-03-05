@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>That Safari Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-20">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-800">That Safari Guide</a>
+
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-yellow-600">Home</a>
+                <a href="safaris.html" class="hover:text-yellow-600">Safaris</a>
+                <a href="blog.html" class="hover:text-yellow-600">Blog</a>
+                <a href="about.html" class="hover:text-yellow-600">About</a>
+                <a href="contact.html" class="hover:text-yellow-600">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md p-4">
+            <a href="index.html" class="block py-2 text-gray-900 hover:text-yellow-600">Home</a>
+            <a href="safaris.html" class="block py-2 text-gray-900 hover:text-yellow-600">Safaris</a>
+            <a href="blog.html" class="block py-2 text-gray-900 hover:text-yellow-600">Blog</a>
+            <a href="about.html" class="block py-2 text-gray-900 hover:text-yellow-600">About</a>
+            <a href="contact.html" class="block py-2 text-gray-900 hover:text-yellow-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-cover bg-center" style="background-image: url('assets/images/leopardsideviewluangwa.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <h1 class="text-5xl font-bold md:text-6xl">Experience Africa’s Wild Beauty</h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl">
+                Embark on unforgettable safari adventures in Kruger, Luangwa, Ruaha, and beyond.
+            </p>
+            <a href="safaris.html" class="mt-6 bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition">
+                Explore Safaris
+            </a>
+        </div>
+    </section>
+
+
+      <!-- Welcome Section -->
+      <section class="py-16 px-4 md:py-28 bg-gray-100">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">That Safari Guide Welcomes You</h2>
+                <p class="text-lg md:text-xl text-gray-600 mt-4">
+                  With over a decade of experience guiding safaris across Zambia, Malawi, and South Africa, I bring you closer to Africa’s untamed beauty. 
+                  My knowledge of the African wilderness is unmatched—rooted in passion, legend, and a deep connection to nature.
+                </p>
+                <a href="about.html" class="mt-6 inline-block bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition">
+                    Learn More
+                </a>
+            </div>
+            <div>
+                <img src="assets/images/crawshayzebraluangwa.jpg" alt="Crawshay Zebra in Luangwa" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+      <!-- Safari Destinations -->
+      <section class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Explore Our Safaris</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+                Discover Africa’s most breathtaking national parks and wildlife experiences.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
+                
+                <!-- Kruger -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="assets/images/groundhornbill.jpg" alt="Kruger National Park" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold text-gray-800">Kruger National Park</h3>
+                        <p class="text-gray-600 mt-2">South Africa’s premier wildlife destination, home to the Big Five.</p>
+                        <a href="safaris.html#kruger" class="mt-4 inline-block bg-yellow-500 text-gray-900 font-bold py-2 px-6 rounded-lg hover:bg-yellow-600 transition">Explore</a>
+                    </div>
+                </div>
+
+                <!-- Luangwa -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="assets/images/leadwoodforestluangwa.jpg" alt="South Luangwa National Park" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold text-gray-800">South Luangwa National Park</h3>
+                        <p class="text-gray-600 mt-2">Famous for walking safaris and abundant wildlife.</p>
+                        <a href="safaris.html#luangwa" class="mt-4 inline-block bg-yellow-500 text-gray-900 font-bold py-2 px-6 rounded-lg hover:bg-yellow-600 transition">Explore</a>
+                    </div>
+                </div>
+
+                <!-- Liwonde -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="assets/images/hippo.jpg" alt="Liwonde National Park" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold text-gray-800">Liwonde National Park</h3>
+                        <p class="text-gray-600 mt-2">Malawi’s top safari spot, known for elephants & river safaris.</p>
+                        <a href="safaris.html#liwonde" class="mt-4 inline-block bg-yellow-500 text-gray-900 font-bold py-2 px-6 rounded-lg hover:bg-yellow-600 transition">Explore</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 px-4 bg-white border-t border-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-6">
+                <div class="text-center">
+                    <span class="text-5xl">🦁</span>
+                    <h3 class="text-2xl font-semibold text-gray-800 mt-4">Expert Safari Guide</h3>
+                    <p class="text-gray-600 mt-2">Over 10 years of experience guiding in Zambia, Malawi, and South Africa.</p>
+                </div>
+                <div class="text-center">
+                    <span class="text-5xl">🌍</span>
+                    <h3 class="text-2xl font-semibold text-gray-800 mt-4">Custom Itineraries</h3>
+                    <p class="text-gray-600 mt-2">Tailored safari experiences based on your interests and travel goals.</p>
+                </div>
+                <div class="text-center">
+                    <span class="text-5xl">📷</span>
+                    <h3 class="text-2xl font-semibold text-gray-800 mt-4">Wildlife Photography</h3>
+                    <p class="text-gray-600 mt-2">Get close to nature and capture Africa’s breathtaking wildlife moments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Footer -->
+       <footer class="bg-gray-900 text-white mt-20 pt-10 pb-4">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6 text-center lg:text-center">
+            
+            <!-- Left Side: Quick Links -->
+            <div class="flex flex-col items-center lg:items-start">
+                <h3 class="text-xl font-semibold mb-3">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-yellow-500">Home</a></li>
+                    <li><a href="safaris.html" class="hover:text-yellow-500">Safaris</a></li>
+                    <li><a href="blog.html" class="hover:text-yellow-500">Blog</a></li>
+                    <li><a href="about.html" class="hover:text-yellow-500">About</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-500">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Side: Contact Info + Call to Action -->
+            <div class="flex flex-col items-center lg:items-end text-center lg:text-right">
+                
+                <!-- Contact Info -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold">Contact Us</h3>
+                    <p class="text-gray-400">
+                        <a href="mailto:info@thatsafariguide.com" class="hover:text-yellow-500">info@thatsafariguide.com</a>
+                    </p>
+                    <p class="text-gray-400">
+                        <a href="https://wa.me/351964872495" target="_blank" class="hover:text-yellow-500">WhatsApp: +351 964 872 495</a>
+                    </p>
+                </div>
+
+                <!-- Call to Action -->
+                <h2 class="text-2xl font-semibold">Ready for Your Next Safari?</h2>
+                <p class="text-gray-400 mt-2">Explore Africa’s best safari destinations with expert guidance.</p>
+                <a href="contact.html" class="mt-4 inline-block bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition">
+                    Book a Safari
+                </a>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="mt-6 text-center">
+            <p class="text-gray-400 mb-2">Follow us for safari updates & wildlife tips:</p>
+            <a href="#" class="mx-2 text-yellow-500 hover:text-yellow-400">Facebook</a>
+            <a href="#" class="mx-2 text-yellow-500 hover:text-yellow-400">Instagram</a>
+            <a href="#" class="mx-2 text-yellow-500 hover:text-yellow-400">YouTube</a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-6 border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+            &copy; 2025 That Safari Guide. All Rights Reserved.
+        </div>
+    </footer>
+
+
+</body>
+</html>
