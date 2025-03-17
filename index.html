@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>African Adventures with That Safari Guide</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body class="bg-white">
+  <nav class="bg-white shadow h-[100px] flex items-center justify-between px-8 relative">
+    <!-- Title with homepage link -->
+    <a href="index.html" class="text-2xl font-bold text-stone-900 hover:text-red-700 transition duration-300">That Safari Guide</a>
+    
+    <!-- Hamburger Button -->
+    <button id="menu-button" class="focus:outline-none" aria-label="Open menu">
+      <div class="space-y-1 transition-transform duration-300 ease-in-out">
+        <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar1"></span>
+        <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar2"></span>
+        <span class="block w-8 h-1 bg-stone-900 rounded transition-all duration-300" id="bar3"></span>
+      </div>
+    </button>
+
+    <!-- Sidebar -->
+    <div id="sidebar-overlay" class="hidden fixed inset-0 bg-black bg-opacity-30"></div>
+    
+    <div id="sidebar" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full lg:block transition-transform duration-300">
+      <div class="p-6">
+        <h2 class="text-xl font-bold mb-4">Menu</h2>
+        <ul class="space-y-3">
+          <!-- Experiences -->
+          <li>
+            <button id="experiences-button" class="w-full text-left text-stone-900 hover:text-red-700 flex justify-between items-center transition duration-300">
+              Experiences
+              <span id="experiences-icon" class="transition-transform duration-300">▼</span>
+            </button>
+            <ul id="experiences-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+              <li><a href="kruger-national-park-safaris-classic.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Classic Kruger Safaris</a></li>
+              <li><a href="kruger-national-park-safaris-private.html" class="block text-stone-800 hover:text-red-700 transition duration-300">Private Kruger Safaris</a></li>
+            </ul>
+          </li>
+
+          <!-- Guide -->
+          <li>
+            <button id="guide-button" class="w-full text-left text-stone-900 hover:text-red-700 flex justify-between items-center transition duration-300">
+              Guide
+              <span id="guide-icon" class="transition-transform duration-300">▼</span>
+            </button>
+            <ul id="guide-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+              <!-- Fauna -->
+              <li>
+                <button id="fauna-button" class="w-full text-left text-stone-800 hover:text-red-700 flex justify-between items-center transition duration-300">
+                  Fauna
+                  <span id="fauna-icon" class="transition-transform duration-300">▼</span>
+                </button>
+                <ul id="fauna-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Mammals</a></li>
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Birds</a></li>
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Reptiles</a></li>
+                </ul>
+              </li>
+
+              <!-- Flora -->
+              <li>
+                <button id="flora-button" class="w-full text-left text-stone-800 hover:text-red-700 flex justify-between items-center transition duration-300">
+                  Flora
+                  <span id="flora-icon" class="transition-transform duration-300">▼</span>
+                </button>
+                <ul id="flora-menu" class="pl-4 mt-2 space-y-2 hidden transition-all duration-300">
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Trees</a></li>
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Flowers</a></li>
+                  <li><a href="#" class="block text-stone-800 hover:text-red-700 transition duration-300">Grasses</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">About</a></li>
+          <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">Contact</a></li>
+          <li><a href="#" class="block text-stone-900 hover:text-red-700 transition duration-300">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <body class="bg-white">
+    <!-- Video Box-->
+    <div class="w-full h-[420px] sm:h-[720px] flex items-center justify-center bg-black">
+      <video class="w-full h-full object-cover" autoplay loop muted>
+          <source src="assets/videos/South Africa Showreel.mov" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+
+    <!-- Introduction Section -->
+    <section class="py-16 lg:py-32 bg-white text-center px-6">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-5xl font-bold text-gray-900">Guided Safaris in Africa</h1>
+            <p class="mt-10 text-lg text-gray-700">A Guided Safari is the ultimate adventure for those seeking an immersive wildlife experience in Africa’s breathtaking national parks. With an expert safari guide by your side, every game drive transforms into a journey of discovery—spotting elusive wildlife, uncovering hidden wonders, and experiencing the African bush in its raw and untamed beauty. Whether it's your first safari or your next great expedition, let the wild call you to an unforgettable adventure.</p>
+        </div>
+    </section>
+
+    <!-- Recommended Private Safaris Section -->
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-6 tracking-wide">Guided Safaris in Kruger National Park</h2>
+      <p class="mt-2 text-lg text-gray-700">Our Fully Inclusive <a href="kruger-national-park-safaris-private.html" class="underline decoration-1.5 underline-offset-4 hover:decoration-1.5 hover:decoration-red-600 transition-all duration-300 rounded ease-in-out">Private Safaris</a> offer an exclusive and seamless experience, allowing you to explore the wilderness in the comfort of a private vehicle shared only with your friends, family, or loved ones. Every detail is taken care of, including all meals, from a hearty brunch to a delicious dinner, ensuring a stress-free and immersive safari adventure.</p>
+
+  </div>
+
+  <div class="max-w-6xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+      <!-- 5 Day Safari Card -->
+      <div class="bg-white shadow-md text-center">
+          <img src="src/assets/images/card-image-whiterhino.jpg" alt="5 Day Safari" class="w-full h-64 object-cover">
+          <div class="p-4">
+          <h3 class="text-3xl font-bold text-gray-900 mt-4">The Cheetah Safari</h3>
+          <p class="mt-3 text-gray-700">5 days / 4 nights<br>Kruger Rest Camps<br>(min 2 guests)</p>
+          <p class="mt-5 text-xl font-semibold text-gray-900">From R30,800.00 pp</p>
+          <button class="mt-6 px-8 py-3 rounded-full border-4 border-black relative overflow-hidden text-black font-semibold transition-all duration-300 group">
+            <span class="absolute inset-0 bg-red-200 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+            <span class="relative z-10">View Tour</span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- 6 Day Safari Card -->
+      <div class="bg-white shadow-md text-center">
+          <img src="src/assets/images/card-image-whiterhino.jpg" alt="6 Day Safari" class="w-full h-64 object-cover">
+          <div class="p-4">
+          <h3 class="text-3xl font-bold text-gray-900 mt-4">The Elephant Safari</h3>
+          <p class="mt-3 text-gray-700">6 days / 5 nights<br>Kruger Rest Camps<br>(min 2 guests)</p>
+          <p class="mt-5 text-xl font-semibold text-gray-900">From R38,500.00 pp</p>
+          <button class="mt-6 px-8 py-3 rounded-full border-4 border-black relative overflow-hidden text-black font-semibold transition-all duration-300 group">
+            <span class="absolute inset-0 bg-red-200 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+            <span class="relative z-10">View Tour</span>
+          </button>
+          </div>
+      </div>
+      
+      <!-- 7 Day Safari Card -->
+      <div class="bg-white shadow-md text-center">
+          <img src="assets/images/Kafue Lion.jpg" alt="7 Day Safari" class="w-full h-64 object-cover">
+          <div class="p-4">
+          <h3 class="text-3xl font-bold text-gray-900 mt-4">The Big 5 Safari</h3>
+          <p class="mt-3 text-gray-700">7 days / 6 nights<br>Kruger Rest Camps<br>(min 2 guests)</p>
+          <p class="mt-5 text-xl font-semibold text-gray-900">From R46,200.00 pp</p>
+          <button class="mt-6 px-8 py-3 rounded-full border-4 border-black relative overflow-hidden text-black font-semibold transition-all duration-300 group">
+            <span class="absolute inset-0 bg-red-200 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+            <span class="relative z-10">View Tour</span>
+          </button>
+      </div>
+  </div>
+</section>
+
+   <!-- Two Column Image Section with Expert Guided Safaris Paragraph -->
+   <section class="py-32 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-900">Why book with That Safari Guide?</h2>
+        <p class="py-8 mt-2 text-lg text-black">Think about it, you’re planning a safari. Whether it’s your first time or your 27th, a safari guide plays a crucial role in your journey. They bring the African bush to life, revealing the smaller details, share stories, and spot wildlife you might otherwise miss. That’s where I come in. I am That Safari Guide, that one to lead you on your next adventure. I’ve explored, birded, and fallen in love with countless places across this breathtakingly free continent. So don’t hesitate, let <a href="about.html" class="underline decoration-1.5 underline-offset-4 hover:decoration-1.5 hover:decoration-red-600 transition-all duration-300 rounded ease-in-out">That Safari Guide</a>, guide you on your next journey.</p>
+    </div>
+    <div class="max-w-6xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
+        <div>
+            <img src="assets/images/groundhornbill.png" alt="Image 1" class="w-full h-48 md:h-[600px] object-cover shadow-md">
+        </div>
+        <div>
+            <img src="assets/images/little-lying-leopard.jpg" alt="Image 2" class="w-full h-48 md:h-[600px] object-cover shadow-md">
+        </div>
+    </div>
+</section>
+
+   <!-- Who is That Safari Guide Section -->
+   <section class="py-16 bg-white text-center px-6">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-900">Who is That Safari Guide?</h2>
+        <p class="py-8 mt-4 text-lg text-gray-700">That Safari Guide is an expertly trained professional who sharpened his skills at the <a href="https://limpopotraining.co.za/" class="underline decoration-1.5 underline-offset-4 hover:decoration-1.5 hover:decoration-red-600 transition-all duration-300 rounded ease-in-out">Limpopo Field Guiding Academy</a>. After completing intensive theoretical training, he enrolled at the International University of the African Bush, thus sparking a lifelong journey of learning and exploration.</p>
+    </div>
+</section>
+
+
+<!-- Image Box Section -->
+<section class="py-16 bg-white flex justify-center items-center">
+  <div class="max-w-6xl w-full px-6">
+      <img src="assets/images/redbilledoxpeckersonrhinoback.png" alt="Safari Experience" class="w-full h-auto object-cover shadow-md">
+  </div>
+</section>
+
+<!-- Photographic Safaris Section -->
+<section class="py-16 bg-white text-center px-6">
+  <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900">Photographic Safaris</h2>
+      <p class="py-6 mt-4 text-lg text-gray-700">While the International University of the African Bush (<a href="#" class="decoration-1.5 decoration-red-600 underline-offset-4 hover:underline hover:decoration-1.5 hover:decoration-red-600 transition-all duration-300 rounded ease-in-out">IUAB</a>) has been educating me about wildlife and more, my camera has played a crucial role in capturing unforgettable moments in nature—moments you can look back on.
+
+        As That Safari Guide, I have a deep passion for photographing and filming wildlife, and I’d love to take you on a <a href="#" class="underline decoration-1.5 underline-offset-4 hover:decoration-1.5 hover:decoration-red-600 transition-all duration-300 rounded ease-in-out">Photographic Safari</a> through some of the most renowned wild spaces in Africa.
+        
+        Check out the locations we cover and get in touch!</p>
+  </div>
+</section>
+
+ <!-- A Safari Experience with That Safari Guide Section -->
+ <section class="py-16 bg-white text-center px-6">
+  <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900">A Safari Experience with That Safari Guide</h2>
+      <p class="py-8 mt-4 text-lg text-gray-700">It all starts with a dream, doesn't it? Your next project, your next adventure, your next safari. That's exactly how I got into guiding in the first place, a dream. A dream to share the sounds, sights, and incredible feeling of the wild places we have on this great continent. But be careful, once your big toe touches the soil, the bug will bite harder than a tsetse fly!</p>
+  </div>
+</section>
+
+<!-- Image Box Section -->
+<section class="py-16 bg-white flex justify-center items-center">
+  <div class="max-w-6xl w-full px-6">
+      <img src="assets/images/card-image-whiterhino.jpg" alt="Safari Experience" class="w-full h-auto object-cover shadow-md">
+  </div>
+</section>
+
+<section class="p-4 md:p-20 lg:p32">
+  <div class="max-w-2xl mx-auto bg-white p-6 md:p-10">
+    <h2 class="text-3xl font-bold text-black mb-6 text-center">FAQ's About Kruger National Park</h2>
+    <div class="space-y-6">
+        <div class="border-b border-gray-300 pb-2">
+            <button class="accordion w-full text-left flex justify-between items-center p-4 font-medium text-gray-700 focus:outline-none">
+                How much does a safari in Kruger National Park cost?
+                <span class="icon transform transition-transform">+</span>
+            </button>
+            <div class="panel max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <p class="p-4 text-gray-600">The cost of a safari in Kruger National Park varies depending on the type of accommodation, duration, and activities. Budget safaris start around $100 per person per day, while luxury safaris can exceed $1,000 per person per day.</p>
+            </div>
+        </div>
+        <div class="border-b border-gray-300 pb-2">
+            <button class="accordion w-full text-left flex justify-between items-center p-4 font-medium text-gray-700 focus:outline-none">
+                Which is the best safari in Kruger National Park?
+                <span class="icon transform transition-transform">+</span>
+            </button>
+            <div class="panel max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <p class="p-4 text-gray-600">The best safari depends on your preferences. Private game reserves like Sabi Sands offer exclusive luxury experiences, while self-drive safaris allow for flexible exploration. Guided safaris provide expert knowledge for the best sightings.</p>
+            </div>
+        </div>
+        <div class="border-b border-gray-300 pb-2">
+            <button class="accordion w-full text-left flex justify-between items-center p-4 font-medium text-gray-700 focus:outline-none">
+                Is Kruger Safari worth it?
+                <span class="icon transform transition-transform">+</span>
+            </button>
+            <div class="panel max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <p class="p-4 text-gray-600">Absolutely! Kruger National Park is one of Africa’s top wildlife destinations, offering incredible biodiversity, stunning landscapes, and a range of safari options to suit different budgets.</p>
+            </div>
+        </div>
+        <div class="border-b border-gray-300 pb-2">
+            <button class="accordion w-full text-left flex justify-between items-center p-4 font-medium text-gray-700 focus:outline-none">
+                How many days do you need in Kruger Safari?
+                <span class="icon transform transition-transform">+</span>
+            </button>
+            <div class="panel max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <p class="p-4 text-gray-600">A minimum of 3-4 days is recommended to experience different areas and maximize wildlife sightings. However, longer stays of 5-7 days provide a more immersive safari experience.</p>
+            </div>
+        </div>
+        <div class="border-b border-gray-300 pb-2">
+            <button class="accordion w-full text-left flex justify-between items-center p-4 font-medium text-gray-700 focus:outline-none">
+                What months are best for safari in Kruger?
+                <span class="icon transform transition-transform">+</span>
+            </button>
+            <div class="panel max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <p class="p-4 text-gray-600">The best months for a safari in Kruger are during the dry season, from May to October, when wildlife gathers around water sources, making them easier to spot.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!-- Footer-->
+ 
+  <footer class="bg-white text-gray-900 py-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+        
+        <!-- Contact, Business Hours & Booking Info -->
+        <div>
+          <h2 class="text-xl font-bold">That Safari Guide</h2>
+          <p class="text-sm text-gray-600 mt-2">
+            Expert-led safaris across Africa. Experience nature like never before.
+          </p>
+          <p class="mt-4 text-gray-700">
+            📧 <a href="mailto:info@thatsafariguide.com" class="hover:text-red-700">info@thatsafariguide.com</a>
+          </p>
+          <p class="text-gray-700">
+            📞 <a href="tel:+351964872495" class="hover:text-red-700">+351 964 872 495</a>
+          </p>
+  
+          <!-- Business Hours -->
+          <h3 class="text-lg font-semibold mt-6">Business Hours</h3>
+          <p class="mt-2 text-gray-700">Weekdays: 08:00 - 16:00</p>
+          <p class="text-gray-700">Saturdays: 09:00 - 12:30</p>
+          <p class="text-gray-500">Closed on Sundays & Public Holidays</p>
+  
+          <!-- Booking Info -->
+          <h3 class="text-lg font-semibold mt-6">Booking Info</h3>
+          <ul class="mt-2 space-y-2">
+            <li><a href="#" class="hover:text-red-700">Make a Booking</a></li>
+            <li><a href="#" class="hover:text-red-700">Terms and Conditions</a></li>
+            <li><a href="#" class="hover:text-red-700">Visa & Passport</a></li>
+            <li><a href="#" class="hover:text-red-700">About</a></li>
+          </ul>
+        </div>
+  
+        <!-- Nature Guide -->
+        <div>
+          <h3 class="text-lg font-semibold">Nature Guide</h3>
+          <ul class="mt-2 space-y-2">
+            <li><a href="#" class="hover:text-red-700">Mammals</a></li>
+            <li><a href="#" class="hover:text-red-700">Birds</a></li>
+            <li><a href="#" class="hover:text-red-700">Reptiles</a></li>
+            <li><a href="#" class="hover:text-red-700">Trees</a></li>
+            <li><a href="#" class="hover:text-red-700">Flowers</a></li>
+            <li><a href="#" class="hover:text-red-700">Grasses</a></li>
+          </ul>
+        </div>
+  
+        <!-- Newsletter Subscription -->
+        <div>
+          <h3 class="text-lg font-semibold">Follow Us</h3>
+          <ul class="mt-2 space-y-2">
+            <li><a href="#" class="hover:text-red-700">Facebook</a></li>
+            <li><a href="#" class="hover:text-red-700">Instagram</a></li>
+            <li><a href="#" class="hover:text-red-700">YouTube</a></li>
+          </ul>
+  
+          <!-- Newsletter -->
+          <h3 class="text-lg font-semibold mt-6">Subscribe to Our Newsletter</h3>
+          <p class="text-gray-600 mt-2">Stay updated with safari news & travel tips.</p>
+          <form class="mt-4">
+            <input type="email" placeholder="Your Email" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-700">
+            <button class="mt-2 w-full bg-red-700 text-white py-2 rounded-md hover:bg-red-800 transition">
+              Subscribe
+            </button>
+          </form>
+        </div>
+  
+      </div>
+  
+      <!-- Copyright -->
+      <div class="border-t border-gray-300 mt-6 pt-4 text-center text-gray-600 text-sm">
+        © 2025 That Safari Guide. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+  
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
