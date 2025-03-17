@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Forum';
-  src: url('src/assets/font/Forum-Regular.ttf') format('truetype');
+  src: url('/assets/font/Forum-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Avenir';
-  src: url('src/assets/font/avenir-light.ttf') format('truetype');
+  src: url('/assets/font/Forum-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
